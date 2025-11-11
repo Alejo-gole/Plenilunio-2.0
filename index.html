@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sistema exploratorio cultural - Explora la espiral de tiempo y sus estaciones semióticas"
+    />
+    <title>Espiral del Tiempo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="src/main.css" type="text/css" />
+  </head>
+
+  <body
+    class="min-h-screen bg-linear-to-br from-slate-900 via-teal-900 to-emerald-900 text-gray-100"
+  >
+    <!-- Main Container -->
+    <div class="min-h-screen relative overflow-hidden">
+      <!-- Header Section -->
+      <header class="relative z-10 text-center px-4 py-8 md:py-12" role="banner">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-amber-400 uppercase tracking-wider mb-4 animate-pulse-glow"
+        >
+          Sistema exploratorio cultural
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-gray-300 font-light mb-2 max-w-3xl mx-auto">
+          Explora la espiral de tiempo y sus estaciones semióticas
+        </p>
+        <p class="text-sm sm:text-base italic text-gray-400 max-w-2xl mx-auto">
+          Cada sector representa una estación de redes comunnicativas que cohabitan entre si de
+          manera consciente para existir.
+        </p>
+      </header>
+
+      <!-- Loading State -->
+      <div
+        id="loading"
+        class="flex flex-col items-center justify-center min-h-[50vh] gap-6"
+        role="status"
+        aria-live="polite"
+      >
+        <div
+          class="w-16 h-16 border-4 border-amber-400/30 border-t-amber-400 rounded-full animate-spin"
+        ></div>
+        <p class="text-lg text-gray-300 animate-pulse-glow">
+          Conectando con la semiósfera amazónica...
+        </p>
+      </div>
+
+      <!-- Main Content Grid -->
+      <main
+        id="app-content"
+        class="hidden max-w-7xl mx-auto px-3 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0"
+      >
+        <!-- Calendar Section -->
+        <section aria-label="Selector de estaciones en espiral" class="relative">
+          <!-- Contenedor de la espiral -->
+          <div class="relative w-full max-w-md mx-auto h-[600px]">
+            <!-- Espiral de fondo (SVG decorativo) -->
+            <svg
+              class="absolute inset-0 w-full h-full opacity-20"
+              viewBox="0 0 300 300"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 150,150 Q 150,100 180,100 Q 230,100 230,150 Q 230,220 150,220 Q 70,220 70,130 Q 70,50 170,50 Q 270,50 270,170 Q 270,290 130,290 Q 10,290 10,140"
+                fill="none"
+                stroke="rgb(251, 191, 36)"
+                stroke-width="2"
+                stroke-linecap="round"
+                class="animate-pulse-glow"
+              />
+            </svg>
+
+            <!-- Estación 1: YACHAY PACHA (Centro - Inicio de la espiral) -->
+            <button
+              data-season="1"
+              class="absolute top-[45%] left-[45%] w-16 h-16 bg-blue-600/80 hover:bg-blue-500 border-2 border-blue-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-blue-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-blue-400"
+              aria-label="Estación 1: YACHAY PACHA"
+            >
+              <i class="fas fa-leaf text-white text-2xl"></i>
+            </button>
+
+            <!-- Estación 2: INTI RAYMI -->
+            <button
+              data-season="2"
+              class="absolute top-[35%] left-[60%] w-14 h-14 bg-amber-600/80 hover:bg-amber-500 border-2 border-amber-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-amber-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-amber-400"
+              aria-label="Estación 2: INTI RAYMI"
+            >
+              <i class="fas fa-sun text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 3: WAYRA TIEMPO -->
+            <button
+              data-season="3"
+              class="absolute top-[55%] left-[68%] w-14 h-14 bg-green-600/80 hover:bg-green-500 border-2 border-green-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-green-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green-400"
+              aria-label="Estación 3: WAYRA TIEMPO"
+            >
+              <i class="fas fa-wind text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 4: PUQUIO PACHA -->
+            <button
+              data-season="4"
+              class="absolute top-[60%] left-[30%] w-14 h-14 bg-red-600/80 hover:bg-red-500 border-2 border-red-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-red-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-red-400"
+              aria-label="Estación 4: PUQUIO PACHA"
+            >
+              <i class="fas fa-water text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 5: SARA TIEMPO -->
+            <button
+              data-season="5"
+              class="absolute top-[30%] left-[20%] w-14 h-14 bg-purple-600/80 hover:bg-purple-500 border-2 border-purple-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-purple-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-purple-400"
+              aria-label="Estación 5: SARA TIEMPO"
+            >
+              <i class="fas fa-seedling text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 6: COYA RAYMI -->
+            <button
+              data-season="6"
+              class="absolute top-[22%] left-[65%] w-14 h-14 bg-orange-600/80 hover:bg-orange-500 border-2 border-orange-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-orange-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-orange-400"
+              aria-label="Estación 6: COYA RAYMI"
+            >
+              <i class="fas fa-moon text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 7: ÑAWPA PACHA -->
+            <button
+              data-season="7"
+              class="absolute top-[75%] left-[65%] w-14 h-14 bg-pink-600/80 hover:bg-pink-500 border-2 border-pink-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-pink-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink-400"
+              aria-label="Estación 7: ÑAWPA PACHA"
+            >
+              <i class="fas fa-tree text-white text-xl"></i>
+            </button>
+
+            <!-- Estación 8: KALLARI TIEMPO -->
+            <button
+              data-season="8"
+              class="absolute top-[70%] left-[5%] w-14 h-14 bg-cyan-600/80 hover:bg-cyan-500 border-2 border-cyan-400 rounded-full shadow-lg transition-all duration-300 hover:scale-125 hover:shadow-cyan-400/50 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan-400"
+              aria-label="Estación 8: KALLARI TIEMPO"
+            >
+              <i class="fas fa-fire text-white text-xl"></i>
+            </button>
+
+            <!-- Tooltip central (opcional) -->
+            <div
+              class="absolute top-20 left-[50%] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            >
+              <p class="text-amber-400 text-md font-bold text-center">
+                Selecciona<br />una estación
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Information Panel -->
+        <section
+          id="info-panel"
+          class="bg-slate-900/70 backdrop-blur-lg rounded-2xl border border-amber-400/20 p-6 md:p-8 shadow-2xl transition-all duration-300 hover:border-amber-400/40 hover:shadow-amber-400/10"
+          role="region"
+          aria-label="Información de la estación seleccionada"
+        >
+          <h2
+            id="season-name"
+            class="text-3xl md:text-4xl font-bold text-amber-400 uppercase tracking-wide text-center mb-3"
+          >
+            Selecciona una Estación
+          </h2>
+
+          <p id="season-months" class="text-center text-lg text-gray-300 font-medium mb-6">
+            Haz clic en un sector de la espiral
+          </p>
+
+          <div id="season-content" class="space-y-6">
+            <p class="text-base md:text-lg leading-relaxed text-gray-300 italic text-justify">
+              Explora la espiral de nuestros pueblos originarios. Cada sector representa una red de
+              comunicación viviente donde plantas, animales, agua y aire se hablan en lenguajes de
+              signos ancestrales.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Navigation Help -->
+      <footer
+        class="text-center py-8 px-4 bg-slate-900/50 border-t border-amber-400/20 mt-12"
+        role="contentinfo"
+      >
+        <p class="text-sm text-gray-400">
+          Usa el teclado (Tab + Enter) o haz clic para navegar entre las estaciones
+        </p>
+        <p class="text-sm text-green-600">
+          Información recolectada de fuentes académicas en:
+          <a class="hover:text-amber-50" href="">UNAL</a>
+        </p>
+        <p class="text-xs text-gray-500 mt-2">
+          <a class="hover:text-amber-50" href="">Accesibilidad AA</a> ·
+          <a class="hover:text-amber-50" href="">La Huella del Oso &copy;</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

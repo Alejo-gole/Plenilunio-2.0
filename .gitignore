@@ -1,0 +1,13 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos de build de Tailwind
+css/main.css
+
+# Archivos temporales
+venv/
+__pycache__/
+*.pyc
+.env
+*.log
+.prettierrc

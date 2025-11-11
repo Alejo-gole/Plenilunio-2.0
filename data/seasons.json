@@ -1,0 +1,242 @@
+[
+  {
+    "id": "1",
+    "name": "YACHAY PACHA",
+    "months": "Diciembre - Enero",
+    "description": "Tiempo del conocimiento ancestral y renovación espiritual. Las aguas comienzan su descenso revelando los secretos de la tierra.",
+    "color": "#3b82f6",
+    "cosmovision": {
+      "spirit": "El conocimiento fluye como el río que revela sus secretos en la bajante.",
+      "biosemiotic_meaning": "Los sistemas de comunicación se concentran, permitiendo interpretaciones más profundas de los códigos naturales.",
+      "natural_signs": [
+        "<i class='fa-solid fa-seedling'></i> Floración de plantas medicinales",
+        "<i class='fas fa-crow'></i> Cantos nocturnos de las aves sabias",
+        "<i class='fas fa-droplet'></i> Claridad en las aguas",
+        "<i class='fas fa-moon'></i> Luna llena que ilumina senderos ocultos"
+      ]
+    },
+    "climate": {
+      "precipitation": "Moderada (1500-2000mm)",
+      "humidity": "75%",
+      "temperature": "25-30°C"
+    },
+    "practices": [
+      {
+        "name": "Ceremonia del Tabaco",
+        "description": "Ritual de conexión con los espíritus vegetales para recibir enseñanzas ancestrales.",
+        "icon": "<i class='fa-solid fa-feather-pointed'></i>",
+        "biosemiotic_quote": "'El humo lleva nuestras plegarias a los ancestros.' - Sabiduría ancestral"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "INTI RAYMI",
+    "months": "Febrero - Marzo",
+    "description": "Celebración del sol y la abundancia. Los frutos maduran y la selva ofrece sus dones con generosidad.",
+    "color": "#f59e0b",
+    "cosmovision": {
+      "spirit": "El sol dialoga con la tierra en el lenguaje de la abundancia y la gratitud.",
+      "biosemiotic_meaning": "La energía solar se traduce en códigos de maduración que todas las especies interpretan simultáneamente.",
+      "natural_signs": [
+        "<i class='fas fa-sun'></i> Maduración de frutos sagrados",
+        "<i class='fas fa-dove'></i> Aumento de actividad animal",
+        "<i class='fas fa-wind'></i> Días soleados prolongados",
+        "<i class='fas fa-wheat-awn'></i> Abundancia en las chagras"
+      ]
+    },
+    "climate": {
+      "precipitation": "Baja (800-1200mm)",
+      "humidity": "65%",
+      "temperature": "28-33°C"
+    },
+    "practices": [
+      {
+        "name": "Cosecha Ceremonial",
+        "description": "Recolección ritual de frutos con agradecimiento a la Pachamama y los espíritus guardianes.",
+        "icon": "<i class='fa-solid fa-wheat-awn-circle-exclamation'></i>",
+        "biosemiotic_quote": "'Cada fruto es un regalo de la madre tierra.' - Tradición ancestral"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "WAYRA TIEMPO",
+    "months": "Abril - Mayo",
+    "description": "Tiempo de los vientos. Las enseñanzas se esparcen como semillas en el aire que conecta comunidades.",
+    "color": "#22c55e",
+    "cosmovision": {
+      "spirit": "El viento es el mensajero que lleva historias y conocimientos entre las comunidades.",
+      "biosemiotic_meaning": "Las corrientes de aire funcionan como canales de comunicación que transportan polen, esporas y mensajes químicos.",
+      "natural_signs": [
+        "<i class='fa-solid fa-wind'></i> Vientos sostenidos desde el este",
+        "<i class='fa-solid fa-seeding'></i> Dispersión de semillas",
+        "<i class='fa-solid fa-dove'></i> Vuelos migratorios",
+        "<i class='fa-solid fa-feather'></i> Danza de las hojas que cuentan historias"
+      ]
+    },
+    "climate": {
+      "precipitation": "Variable (1200-1800mm)",
+      "humidity": "70%",
+      "temperature": "26-31°C"
+    },
+    "practices": [
+      {
+        "name": "Danza del Viento",
+        "description": "Movimiento ritual para honrar los espíritus del aire y recibir sus mensajes.",
+        "icon": "<i class='fa-solid fa-wind'></i>",
+        "biosemiotic_quote": "'El viento lleva historias entre las comunidades.' - Canto al aire"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "PUQUIO PACHA",
+    "months": "Junio - Julio",
+    "description": "Tiempo de las fuentes. El agua brota de la tierra nutriendo toda forma de vida en un ciclo eterno.",
+    "color": "#ef4444",
+    "cosmovision": {
+      "spirit": "El agua es la sangre de la Pachamama que fluye alimentando la red de vida.",
+      "biosemiotic_meaning": "Los manantiales son nodos de comunicación donde convergen múltiples códigos hídricos y terrestres.",
+      "natural_signs": [
+        "<i class='fa-solid fa-droplet'></i> Nacimiento de nuevos manantiales",
+        "<i class='fa-solid fa-water'></i> Claridad cristalina del agua",
+        "<i class='fa-solid fa-fish'></i> Abundancia de peces",
+        "<i class='fa-solid fa-tree'></i> Verdor intenso en las riberas"
+      ]
+    },
+    "climate": {
+      "precipitation": "Alta (2000-2800mm)",
+      "humidity": "85%",
+      "temperature": "24-29°C"
+    },
+    "practices": [
+      {
+        "name": "Ofrenda al Agua",
+        "description": "Ceremonia de gratitud y purificación en las fuentes sagradas del territorio.",
+        "icon": "<i class='fa-solid fa-droplet'></i>",
+        "biosemiotic_quote": "'El agua es la memoria del universo.' - Palabra del agua"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "SARA TIEMPO",
+    "months": "Agosto - Septiembre",
+    "description": "Tiempo de la siembra. Se plantan las semillas del futuro con intención sagrada y reciprocidad.",
+    "color": "#9333ea",
+    "cosmovision": {
+      "spirit": "Cada semilla plantada es un pacto con el futuro y los espíritus del bosque.",
+      "biosemiotic_meaning": "La siembra activa códigos genéticos dormidos que responden a señales ambientales y rituales humanos.",
+      "natural_signs": [
+        "<i class='fa-solid fa-seedling'></i> Preparación de la tierra",
+        "<i class='fa-solid fa-frog'></i> Llamados de fertilidad",
+        "<i class='fa-solid fa-moon'></i> Luna llena brillante",
+        "<i class='fa-solid fa-bug'></i> Polinizadores activos"
+      ]
+    },
+    "climate": {
+      "precipitation": "Baja-Moderada (1000-1500mm)",
+      "humidity": "68%",
+      "temperature": "25-30°C"
+    },
+    "practices": [
+      {
+        "name": "Siembra Sagrada",
+        "description": "Plantación ritual con cantos y bendiciones ancestrales que activan la tierra.",
+        "icon": "<i class='fa-solid fa-seedling'></i>",
+        "biosemiotic_quote": "'Cada semilla guarda un sueño colectivo.' - Canto de siembra"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "COYA RAYMI",
+    "months": "Octubre - Noviembre",
+    "description": "Celebración de la Luna y lo femenino. Tiempo de introspección y equilibrio cósmico.",
+    "color": "#f97316",
+    "cosmovision": {
+      "spirit": "La luna refleja la sabiduría interior y guía los ciclos de fertilidad.",
+      "biosemiotic_meaning": "Los ciclos lunares sincronizan ritmos biológicos y generan resonancias semióticas entre especies.",
+      "natural_signs": [
+        "<i class='fa-solid fa-moon'></i> Fases lunares intensas",
+        "<i class='fa-solid fa-spa'></i> Florecimiento nocturno",
+        "<i class='fa-solid fa-cloud-moon'></i> Actividad de animales nocturnos",
+        "<i class='fa-solid fa-star'></i> Luminiscencia en aguas"
+      ]
+    },
+    "climate": {
+      "precipitation": "Moderada (1400-1900mm)",
+      "humidity": "72%",
+      "temperature": "23-28°C"
+    },
+    "practices": [
+      {
+        "name": "Círculo de Luna",
+        "description": "Reunión ceremonial femenina bajo la luz lunar para recibir enseñanzas.",
+        "icon": "<i class='fa-solid fa-moon'></i>",
+        "biosemiotic_quote": "'La luna refleja la sabiduría interior.' - Canto lunar"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "ÑAWPA PACHA",
+    "months": "Diciembre (inicio)",
+    "description": "Tiempo del retorno. Cierre de ciclos y preparación para la renovación del año.",
+    "color": "#ec4899",
+    "cosmovision": {
+      "spirit": "El cierre de ciclo es también un principio, como la serpiente que se muerde la cola.",
+      "biosemiotic_meaning": "Los sistemas semióticos se recalibran, preparando nuevos canales de comunicación para el ciclo venidero.",
+      "natural_signs": [
+        "<i class='fa-solid fa-plant-wilt'></i> Caída de hojas ancestrales",
+        "<i class='fa-solid fa-bell-slash'></i> Silencio contemplativo",
+        "<i class='fa-solid fa-otter'></i> Preparación animal",
+        "<i class='fa-solid fa-sun'></i> Amaneceres dorados"
+      ]
+    },
+    "climate": {
+      "precipitation": "Variable (1100-1700mm)",
+      "humidity": "74%",
+      "temperature": "24-29°C"
+    },
+    "practices": [
+      {
+        "name": "Ayuno Ceremonial",
+        "description": "Periodo de purificación y conexión espiritual profunda con los ancestros.",
+        "icon": "<i class='fa-solid fa-hands-praying'></i>",
+        "biosemiotic_quote": "'En el vacío encontramos plenitud.' - Sabiduría del ayuno"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "KALLARI TIEMPO",
+    "months": "Fin de año",
+    "description": "Tiempo del principio. La serpiente cósmica se muerde la cola, iniciando el ciclo eterno.",
+    "color": "#06b6d4",
+    "cosmovision": {
+      "spirit": "El principio y el fin son uno. El tiempo es circular como el mandala de la vida.",
+      "biosemiotic_meaning": "Los códigos ancestrales se reactivan, estableciendo continuidad entre pasado, presente y futuro.",
+      "natural_signs": [
+        "<i class='fa-solid fa-certificate'></i> Auroras extraordinarias",
+        "<i class='fa-solid fa-arrows-rotate'></i> Sincronías naturales",
+        "<i class='fa-solid fa-spiral'></i> Encuentros sagrados",
+        "<i class='fa-solid fa-splotch'></i> Estrellas brillantes que guían"
+      ]
+    },
+    "climate": {
+      "precipitation": "Transicional (1300-1900mm)",
+      "humidity": "76%",
+      "temperature": "26-31°C"
+    },
+    "practices": [
+      {
+        "name": "Fuego Nuevo",
+        "description": "Encendido del fuego sagrado que marca el nuevo ciclo y renueva la alianza cósmica.",
+        "icon": "<i class='fa-solid fa-fire'></i>",
+        "biosemiotic_quote": "'El fuego transforma y renueva todo lo que toca.' - Palabra del fuego"
+      }
+    ]
+  }
+]
