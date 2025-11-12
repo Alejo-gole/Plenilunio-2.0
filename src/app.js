@@ -3,7 +3,7 @@
  * Sistema de comunicación ancestral entre humanos, naturaleza y tiempo
  * Basado en principios biosemióticos y cosmovisión indígena amazónica
  */
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://plenilunio-api.onrender.com";
 console.log("🔧 API_BASE_URL configurada:", API_BASE_URL);
 
 // Variables globales
@@ -55,15 +55,25 @@ async function loadSeasonsData() {
 /**
  * Obtiene datos climáticos en tiempo real desde la API
  */
+// Obtiene datos climáticos en tiempo real desde la API
 async function getClimateData(seasonId) {
   try {
     const url = `${API_BASE_URL}/api/v1/climate/${seasonId}`;
     console.log("🌍 Solicitando datos climáticos...");
     console.log("📡 URL:", url);
 
-    const response = await fetch(url);
+    // Crear un timeout de 60 segundos para dar tiempo a que Render despierte
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 segundos
 
-    console.log("📊 Respuesta:", response.status, response.statusText);
+    const response = await fetch(url, {
+      signal: controller.signal,
+      mode: "cors",
+    });
+
+    clearTimeout(timeoutId);
+
+    console.log("📨 Respuesta:", response.status, response.statusText);
 
     if (!response.ok) {
       console.warn("⚠️ No se pudieron obtener datos climáticos en tiempo real");
@@ -72,11 +82,14 @@ async function getClimateData(seasonId) {
 
     const data = await response.json();
     console.log("✅ Datos recibidos:", data);
-
     return data.climate;
   } catch (error) {
-    console.error("❌ Error:", error);
-    console.warn("API climática no disponible, usando datos estáticos");
+    if (error.name === "AbortError") {
+      console.warn("⏱️ Timeout: La API tardó demasiado en responder");
+    } else {
+      console.error("❌ Error:", error);
+    }
+    console.warn("📊 API climática no disponible, usando datos estáticos");
     return null;
   }
 }
@@ -158,6 +171,7 @@ function handleSeasonSelection(event) {
 /**
  * Selecciona y renderiza una estación
  */
+// Selecciona y renderiza una estación
 async function selectSeason(seasonId) {
   const seasonData = SEASONS_DATA[seasonId];
   if (!seasonData) {
@@ -170,6 +184,15 @@ async function selectSeason(seasonId) {
 
   // Actualizar sectores activos
   updateSeasonVisualStates(seasonId);
+
+  // Mostrar mensaje de carga mientras obtiene datos de API
+  elements.seasonContent.innerHTML = `
+        <div class="text-center text-amber-400 py-8">
+            <i class="fa-solid fa-spinner fa-spin text-4xl mb-4"></i>
+            <p class="text-lg">Despertando la API del Amazonas...</p>
+            <p class="text-sm text-gray-400 mt-2">Puede tardar hasta 60 segundos en la primera carga</p>
+        </div>
+    `;
 
   // Obtener datos climáticos en tiempo real
   console.log("🔍 Llamando a getClimateData con seasonId:", seasonId);
