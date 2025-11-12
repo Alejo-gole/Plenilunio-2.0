@@ -17,8 +17,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5500",
         "http://127.0.0.1:5500",
-        "https://plenilunio.lahuelladeloso.com",  # Tu dominio personalizado
-        "*"
+        "https://plenilunio.lahuelladeloso.com"
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
